@@ -1,4 +1,4 @@
-Automated Order Flow Completion System
+# Automated Order Flow Completion System
 
 Project contains two directories : -
   1. lib
@@ -7,7 +7,7 @@ Project contains two directories : -
   2. spec
     contains the test files
 
-#lib/order_flow.rb
+# lib/order_flow.rb
 
 Contains Class OrderFlow which on initialize accepts comma separated integers as Drug inventory
 

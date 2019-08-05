@@ -15,7 +15,9 @@ class OrderFlow
         end
         price[single[0]] = calc
       end
-      price_hash = price.sort_by {|key, value| value}.reverse.to_h
+
+      price_hash = reverse_sort_hash(price)
+
       final_order_flow = []
       price_hash.each do |order_key, order_price|
         order[order_key].each_with_index do |drug, index|
@@ -29,4 +31,9 @@ class OrderFlow
       return final_order_flow.uniq!
     end
   end
+
+  def reverse_sort_hash(price)
+    price.sort_by {|key, value| value}.reverse.to_h
+  end
+
 end

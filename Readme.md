@@ -14,18 +14,21 @@ Contains Class OrderFlow which on initialize accepts comma separated integers as
 orders_recieved method
   - requires json data like
     {
-      "O1" => {
-        "D1" => [3, 2],
-        "D2" => [5, 3]
-      },
-      "O2" => {
-        "D1" => [2, 5],
-        "D2" => [5, 4]
-      },
-      "O3" => {
-        "D1" => [3, 3],
-        "D2" => [15, 2]
-      }
+        "O1" => {
+            "D1" => [3, 2],
+            "D2" => [5, 3],
+            "D3" => [8, 5]
+        },
+        "O2" => {
+            "D1" => [2, 5],
+            "D2" => [5, 4],
+            "D3" => [10, 5]
+        },
+        "O3" => {
+            "D1" => [3, 3],
+            "D2" => [10, 2],
+            "D3" => [7, 5]
+        }
     }
     as per example.
     D* is an array with 1st element as number of drugs to be shipped and 2nd element is the profit with each drug shipped
